@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 42px;
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #100f10, #746d68);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #696859);
+    margin-top: 39px;
+}
+
+.calculator{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(68, 77, 95, 0.5);
+    max-width: 90%;
+    width: 400px;
+}
+
+input{
+    width: 100%;
+    border: none;
+    padding: 24px;
+    margin: 10px 0;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    box-shadow: 5px 5px 15px rgba(6, 1, 1, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover{
+    background: rgba(255, 255, 255, 0.1); /* Slightly darker background */
+}
+
+.equlBtn:hover{
+    background: rgba(63, 244, 8, 0.938); /* Slightly darker background */
+}
+
+.equlBtn{
+    background-color: #fb7c14;
+}
+
+.operator{
+    color: #76eb61;
+}
+
+.specialBtn{
+    color: #e50303;
+}
+
+.specialBtn:hover{
+    background: rgba(244, 8, 8, 0.938); 
+    color: #ffffff;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    body{
+        margin-top: 0;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .calculator{
+        width: 100%;
+        padding: 10px;
+    }
+
+    input{
+        font-size: 30px;
+        padding: 20px;
+        margin: 5px 0;
+    }
+
+    button{
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 32px;
+        height: 60px;
+    }
+
+    input{
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    button{
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin: 12px;
+    }
+}
